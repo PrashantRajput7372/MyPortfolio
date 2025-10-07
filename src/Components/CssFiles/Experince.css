@@ -1,0 +1,69 @@
+.experience-section {
+  background-color: black;
+  padding: 10px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #e3641a;
+  margin-bottom: 50px;
+}
+
+.experience-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.experience-card {
+  background: #fff;
+  border-left: 6px solid #e3641a;
+  border-radius: 8px;
+  padding: 25px 30px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.experience-card h3 {
+  color: #e3641a;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.company-role {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.project-list {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.project-list li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.tech-used {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 10px;
+}

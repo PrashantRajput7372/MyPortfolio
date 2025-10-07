@@ -1,0 +1,34 @@
+[
+  {
+    "key": 1,
+    "title": "Natours",
+    "imageSrc": "/Natours.png",
+    "description": "This is the frontend of the Natours application, a modern travel booking platform. The project is designed to provide a seamless and interactive user experience for booking tours, with a visually appealing interface and robust integration with a backend API.",
+    "demo": "https://natoure-frontend.vercel.app/",
+    "source": "https://github.com/PrashantRajput7372/NatoureFrontend"
+  },
+  {
+    "key": 2,
+    "title": "showMyBook",
+    "imageSrc": "/showMyBook.png",
+    "description": "showmyBook is a React application that replicates a dynamic movie theater booking system. Designed with flexibility in mind, it can be easily adapted to other booking platforms such as:✈️ Flight seat reservations🎤 Concert ticket bookings🚌 Bus seat layouts",
+    "demo": "https://showmy-book-tdid.vercel.app/",
+    "source": "https://github.com/PrashantRajput7372/showmyBook"
+  },
+  {
+    "key": 3,
+    "title": "Lets Cook Together",
+    "imageSrc": "/assets/forkify.png",
+    "description": "A website  made with java Script uses API call for finding the recipies with matching ingridents",
+    "demo": "https://prashantcookingrecipes.netlify.app/#664c8f193e7aa067e94e89a8",
+    "source": "https://github.com/PrashantRajput7372/forkifyapp"
+  },
+  {
+    "key": 4,
+    "title": "Text Utils",
+    "imageSrc": "/assets/textutils.png",
+    "description": "A website buit with React.js help to control the text as desiered ",
+    "demo": "https://textutilesprashant.netlify.app/",
+    "source": "https://github.com/PrashantRajput7372/tetutils"
+  }
+]

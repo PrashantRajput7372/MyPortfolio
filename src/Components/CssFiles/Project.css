@@ -1,0 +1,152 @@
+/* ===== Projects Container ===== */
+.projects-container {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom right, #fff7e6, #ffe0b2);
+  min-height: 100vh;
+}
+
+/* ===== Title ===== */
+.projects-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #ff7a00;
+}
+
+/* ===== Grid Layout ===== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* ===== Project Card ===== */
+.project-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 350px;        /* same width for all */
+  height: 500px;       /* fixed height for all */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== Project Image ===== */
+.project-image {
+  width: 100%;
+  height: 200px;       /* fixed height */
+  object-fit: cover;   /* crops if needed */
+  background-color: #f0f0f0; /* placeholder if image broken */
+  padding: 5px;
+}
+
+/* ===== Project Content ===== */
+.project-content {
+  padding: 1rem 1.5rem;
+  flex-grow: 1;       /* ensures consistent card height */
+}
+
+.project-content h3 {
+  margin: 0.5rem 0;
+  color: #ff7a00;
+  font-size: 1.4rem;
+}
+
+.project-content p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  overflow: hidden;  /* prevent overflow */
+}
+
+/* ===== Buttons ===== */
+.project-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0 1.5rem 0;
+}
+
+.btn-demo,
+.btn-source {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-demo {
+  background-color: #ff7a00;
+  color: #fff;
+}
+
+.btn-demo:hover {
+  background-color: #ff9f33;
+}
+
+.btn-source {
+  border: 2px solid #ff7a00;
+  color: #ff7a00;
+}
+
+.btn-source:hover {
+  background-color: #ff7a00;
+  color: #fff;
+}
+
+/* ===== Mobile View (≤800px) ===== */
+@media (max-width: 800px) {
+  .projects-container {
+    padding: 2rem 1rem;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr; /* single column */
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    width: 100%;
+    height: 480px; /* slightly smaller on mobile */
+    border-radius: 15px;
+  }
+
+  .project-image {
+    height: 180px;
+    
+  }
+
+  .project-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-content p {
+    font-size: 0.9rem;
+  }
+
+  .project-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .btn-demo,
+  .btn-source {
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem 0;
+  }
+}
