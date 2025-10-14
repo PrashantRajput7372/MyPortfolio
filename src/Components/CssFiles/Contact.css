@@ -61,6 +61,18 @@
   color: #e3641a;
 }
 
+@media (max-width: 768px) {
+  .contact-methods {
+    /* flex-direction: column; */
+    gap: 20px;
+  }
+  .contact-link{
+    width: 60px;
+    height: 50px;
+  }
+  
+}
+
     /* .icons:hover{
         color: #e3641a;
         transform: scale(1.1);

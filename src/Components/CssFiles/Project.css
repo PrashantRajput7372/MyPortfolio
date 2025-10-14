@@ -140,7 +140,7 @@
   .project-buttons {
     flex-direction: column;
     gap: 0.5rem;
-    padding-bottom: 1rem;
+    padding: 10px;
   }
 
   .btn-demo,
