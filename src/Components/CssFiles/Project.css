@@ -37,7 +37,8 @@
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  
+  scale: 1.08;
 }
 
 /* ===== Project Image ===== */

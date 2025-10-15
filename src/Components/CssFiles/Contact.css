@@ -69,8 +69,14 @@
   .contact-link{
     width: 60px;
     height: 50px;
+    padding: 2px;
+    border:2px solid #e3641a
   }
-  
+  .icons{
+    height: 30px;
+    width: 30px;
+    gap: 20px;
+  }
 }
 
     /* .icons:hover{

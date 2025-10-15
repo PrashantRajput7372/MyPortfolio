@@ -5,8 +5,19 @@ import { motion } from "motion/react";
 
 function Hero() {
   const isMoblie = window.innerWidth <= 800;
+
+   const designation  = `< Frontend Developer />`;
+   const desarr = designation.split("");
+   console.log(desarr);
+
+   const letterAnimation = {
+    hidden: { opacity: 0, y: 50 },
+    visible: (i) => ({opacity: 1, y: 0, transition: { delay: i * 0.2 } })};
+
+
   return (
     <>
+      <section id = "hero">
       <div className="hero-container">
         <div className="hero-text">
           <motion.h1
@@ -29,7 +40,16 @@ function Hero() {
                     scale: isMoblie?1:1.5,
                     transition: { duration: 1.5 }
                   }}
-          >{`< Frontend Developer />`}
+          >{desarr.map((char, index) => (
+            <motion.span
+              key={index}
+              custom={index}
+              initial="hidden"
+              animate="visible"
+              variants={letterAnimation}
+            >{char}</motion.span>
+          ))
+          }
           </motion.h2>
           <p>
             I create responsive and visually appealing web applications using
@@ -56,6 +76,7 @@ function Hero() {
           <img src="/portfolioimage.png" alt="Portfolio" />
         </motion.div>
       </div>
+      </section>
     </>
   );
 }

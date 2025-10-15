@@ -2,9 +2,14 @@ import React, { useState } from "react";
 import "../CssFiles/Navbar.css";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
+import { Link } from "react-scroll";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleNavClick = () => {
+    setMenuOpen(false); 
+  }
 
   return (
     <>
@@ -43,20 +48,20 @@ function Navbar() {
             },
           }}
         >
-          <div className="navbar-link">Home</div>
-          <div className="navbar-link">Experience</div>
-          <div className="navbar-link">Project</div>
-          <div className="navbar-link">About</div>
-          <div className="navbar-link">Contact Me</div>
+          <Link to = "hero" smooth={true} duration={700} className="navbar-link">Home</Link>
+          <Link to = "experience" smooth={true} duration={700} className="navbar-link">Experience</Link>
+          <Link to = "projects" smooth={true} duration={700} className="navbar-link">Project</Link>
+          <Link to = "about" smooth={true} duration={700} className="navbar-link">About</Link>
+          <Link to = "contact" smooth={true} duration={700} className="navbar-link">Contact Me</Link>
         </motion.div>
 
         {/* Dropdown Nav Links (mobile) */}
         <div className={`dropdown-links ${menuOpen ? "open" : ""}`}>
-          <div className="navbar-link">Home</div>
-          <div className="navbar-link">Experience</div>
-          <div className="navbar-link">Project</div>
-          <div className="navbar-link">About</div>
-          <div className="navbar-link">Contact Me</div>
+           <Link to = "hero" smooth={true} duration={700} className="navbar-link" onClick={()=>handleNavClick()}>Home</Link>
+          <Link to = "experience" smooth={true} duration={700} className="navbar-link" onClick={()=>handleNavClick()}>Experience</Link>
+          <Link to = "projects" smooth={true} duration={700} className="navbar-link" onClick={()=>handleNavClick()}>Project</Link>
+          <Link to = "about" smooth={true} duration={700} className="navbar-link" onClick={()=>handleNavClick()}>About</Link>
+          <Link to = "contact" smooth={true} duration={700} className="navbar-link" onClick={()=>handleNavClick()}>Contact Me</Link>
         </div>
       </motion.div>
       <div className="navbar-divider"></div>

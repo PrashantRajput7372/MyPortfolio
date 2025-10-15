@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { useState } from 'react'
 
 
@@ -7,6 +8,7 @@ import Hero from './Components/Screens/Hero'
 import Experince from './Components/Screens/Experince'
 import Contact from './Components/Screens/Contact'
 import Projects from './Components/Screens/Projects'
+import About from './Components/Screens/About'
 
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
       <Navbar/>
       <Hero/>
       <Experince/>
+      <About/>
       <Projects/>
       <Contact/>
     </>
