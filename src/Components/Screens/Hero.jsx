@@ -26,11 +26,11 @@ function Hero() {
             animate={{
               x: 0,
               opacity: 1,
-              scale: isMoblie?1.1:2,
+              scale: isMoblie?1.1:1.5,
               transition: { duration: 2 },
             }}
           >
-            Hi there, I am Prashant Singh!
+            Rendering Hello, I am Prashant Singh!
           </motion.h1>
           <motion.h2 className="highlight font-bold"
           initial={{  opacity: 0.5, scale: 0.2 }}

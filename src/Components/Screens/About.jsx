@@ -1,5 +1,6 @@
 import React from "react";
 import "../CssFiles/About.css";
+import { motion} from "motion/react";
 function About() {
          
     const items = [
@@ -15,7 +16,13 @@ function About() {
         <h1 className="about_heading">About Me</h1>
         <div className="about_container">
          <img src="/portfolioimage.png" alt="Portfolio"  className="about_img"/>
-         <div className="about_data">
+         <motion.div className="about_data"
+            
+  initial={{ opacity: 0, x: 200 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ type: "spring", duration: 1.8, bounce: 0.5 }}
+  viewport={{ once: false, amount: 0.3 }}
+         >
           <div className="aCards">
             {items.map((item, index) => (
               <div className="aCard" key={index}>
@@ -34,7 +41,7 @@ function About() {
               passionate about bringing ideas to life.
             </p>
           
-        </div>
+        </motion.div>
         </div>
       </div>
     </section>
