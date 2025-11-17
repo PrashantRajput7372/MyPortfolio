@@ -56,7 +56,7 @@ function Hero() {
             React and CSS.
           </p>
           <div className="hero-buttons">
-            <button className="btn-primary">Hire Me</button>
+            {/* <button className="btn-primary">Hire Me</button> */}
             <a
               href="/PrashantKumarSinghResume.pdf"
               download
